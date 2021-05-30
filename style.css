@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+}
+body, button{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Verylightgray);
+}
+
+h2{
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: white;
+    padding: 10px;
+    
+}
+
+img{
+    padding: 10px;
+}
+
+p{
+    font-size: 14px;
+    color: var(--Transparentwhite);
+    padding: 10px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+    
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border: solid;
+    border-radius: 20px;
+}
+
+.cards{
+    position: relative;
+    padding: 30px;
+    max-width: 430px;
+    height: 400px;
+    
+}
+
+.btn{
+    background-color: var(--Transparentwhite);
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 30px;
+}
+
+.Darkcyan{
+    background-color: var(--Darkcyan);
+}
+
+.VeryDarkcyan{
+    background-color: var(--Verydarkcyan);
+    border-radius: 0px 10px 10px 0;
+}
+
+.Brightorange{
+    background-color: var(--Brightorange);
+    border-radius: 10px 0px 0 10px;
+}
+
+@media screen and (max-device-width : 480px) {
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+    }
+    .Brightorange{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .VeryDarkcyan{
+        border-radius: 0px 0px 10px 10px;
+    }
+}
